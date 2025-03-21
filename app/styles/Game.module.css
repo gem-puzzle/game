@@ -1,0 +1,27 @@
+.header {
+  background-image: url(/images/background.svg);
+}
+
+.header > h1 {
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Barrio;
+  font-weight: 700;
+  font-size: 4.6rem;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #f9f9f9;
+}
+
+.main {
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  row-gap: 3rem;
+}
+
+.main > form {
+  display: flex;
+  column-gap: 1.8rem;
+}
