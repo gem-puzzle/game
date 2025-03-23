@@ -1,0 +1,25 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  font-family: Barrio;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f9f9f9;
+}
+
+.slider > datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+}
+
+.slider > datalist > option {
+  padding: 0;
+  transform-origin: 50% 50%;
+  transform: rotate(270deg);
+  font-weight: 700;
+  text-align: center;
+}

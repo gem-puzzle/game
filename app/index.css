@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: Barrio;
+    font-display: swap;
+    src: url(/fonts/Barrio-Regular.ttf);
+  }
+
+  @media (prefers-reduced-motion) {
+    ::view-transition-group(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+      animation: none !important;
+    }
+  }
+
+  ::view-transition-group(*) {
+    animation-timing-function: linear;
+    animation-duration: 166ms;
+  }
+}
+
+@theme {
+  --font-barrio: Barrio;
+}

@@ -1,0 +1,21 @@
+.button {
+  padding: 0.7rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  row-gap: 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: Barrio;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f9f9f9;
+  background-color: #85358d;
+}
+
+.button > img {
+  width: 3rem;
+  height: 3rem;
+}
