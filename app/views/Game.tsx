@@ -13,7 +13,7 @@ export function Game () {
       <h1 className="py-6 tracking-wide text-5xl text-center text-blue-50">Hlavolam "15"</h1>
     </header>
 
-    <main className="w-xl flex-auto self-center grid place-content-center">
+    <main className="w-xl self-center justify-self-center">
       <form className="flex gap-x-2">
         <Slider />
         <Button />

@@ -3,13 +3,17 @@
   "$schema": "https://json.schemastore.org/tsconfig",
 
   "compilerOptions": {
-    "strict": true,
     "types": ["node", "vite/client"],
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": { "~/*": ["app/*"] },
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.tsbuildinfo",
+    "strict": true,
+    "composite": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "verbatimModuleSyntax": true,
@@ -18,7 +22,9 @@
     "skipLibCheck": true,
     "noEmit": true,
     "removeComments": true,
-
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "useDefineForClassFields": true,
     "exactOptionalPropertyTypes": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
@@ -29,12 +35,6 @@
     "noUnusedParameters": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "checkJs": true,
-
-    "baseUrl": "./",
-    "paths": { "~/*": ["app/*"] },
-
-    "composite": true,
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.tsbuildinfo"
+    "checkJs": true
   }
 }

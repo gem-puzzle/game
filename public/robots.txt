@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://react.nakurze.sk/sitemap.xml
+Sitemap: https://game-of-fifteen.vercel.app/sitemap.xml
