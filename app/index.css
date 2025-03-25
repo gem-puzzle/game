@@ -26,4 +26,9 @@
 
 @theme {
   --font-barrio: "Barrio", system-ui;
+  --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 0.45);
+}
+
+@utility vertical-lr {
+  writing-mode: vertical-lr;
 }

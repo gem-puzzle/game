@@ -1,4 +1,4 @@
-export const Overlay = div`
+export const Overlay = `
   width: 330px;
   height: 330px;
   padding: 0;

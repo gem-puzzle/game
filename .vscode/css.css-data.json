@@ -6,6 +6,11 @@
     {
       "name": "@theme",
       "description": "defines tailwindcss theme variables"
+    },
+
+    {
+      "name": "@utilities",
+      "description": "defines tailwindcss utility classes"
     }
   ],
   "pseudoClasses": [],
