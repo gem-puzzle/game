@@ -2,7 +2,6 @@ import { useId } from 'react'
 import { useAtomValue } from 'jotai'
 import { state } from '~/store'
 import { changeHandler } from '~/handlers/slider'
-import clsx from 'clsx'
 
 export function Slider () {
   const countId = useId()
@@ -10,13 +9,8 @@ export function Slider () {
   const { shufflesCount } = useAtomValue(state)
   const range = Array.from({ length: 7 }, (_, i) => i ? i * 5 : 1)
 
-  const sliderStyle = [
-    'flex', 'flex-col', 'grow', 'justify-center',
-    'font-barrio', 'font-bold', 'tracking-wide', 'text-blue-50'
-  ]
-
   return (
-    <div className={clsx(sliderStyle)}>
+    <div className="flex flex-col grow justify-center font-barrio font-bold tracking-wide text-blue-50">
       <label htmlFor={countId}>
         <span className="text-lg">POČET ŤAHOV MIEŠANIA: {shufflesCount}</span>
       </label>
@@ -33,10 +27,10 @@ export function Slider () {
       />
       
       <datalist id={listId} className="flex flex-col justify-between vertical-lr">
-        {range.map((v, i) => <option
-          value={i}
-          label={(v).toString()}
-          key={v}
+        {range.map((val, idx) => <option
+          value={idx}
+          label={val.toString()}
+          key={val}
           className="origin-center -rotate-90 font-bold text-center"
         />)}
       </datalist>
